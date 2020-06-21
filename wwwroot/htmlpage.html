@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Мой сайт</title>
+    <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="lib/font-awesome/css/fontawesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+
+    <header>
+        <div class="container">
+            <!-- Панель навигации -->
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <!-- меню сайта -->
+                <a class="navbar-brand" href="#">803320</a>
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Лб 1</a>
+                    <a class="nav-item nav-link" href="#">Каталог</a>
+                    <a class="nav-item nav-link"
+                       href="#">Администрирование</a>
+                </div>
+                <!-- меню сайта - конец -->
+                <!-- Информация пользователя -->
+                <a href="#" class="navbar-text ml-auto">
+                    <i class="fa fa-shopping-cart nav-color"></i> 
+                </a>
+                <div class="dropdown ml-4 nav-color">
+                    <div class="dropdown-toggle" id="dropdownMenuButton"
+                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="images/avatar.jpg" width="30" alt="User"
+                             class="rounded" />
+                    </div>
+                    <div class="dropdown-menu" aria-
+                         labelledby="dropdownMenuButton">
+                        <div class="dropdown-item-text">
+                            <img src="images/avatar.jpg" width="50" alt="User"
+                                 class="rounded" />
+                            user@mail.ru
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Мои товары</a>
+                        <a class="dropdown-item" href="#">Log off</a>
+                    </div>
+                </div>
+                <!-- Информация пользователя - конец -->
+            </nav> <!-- Панель навигации - конец -->
+        </div><!-- container - конец -->     
+    </header>
+
+    <main class="container">
+        <p class="spisok">Список</p>
+        <ul class="spisokAB">
+            <li>А. элемент 1 списка</li>
+            <li>B. элемент 2 списка</li> 
+        </ul>
+        <hr> <!--// Рисует горизонтальную линию-->
+        <p class="forma">Форма</p>
+        <form method="post" action="http://localhost:8080">
+            <ol>
+                <div>
+                    <input  class ="width-group" type="checkbox" checked name="chbox1" />Чек-бокс 1
+                </div>
+                <div>
+                    <input class ="width-group" type="checkbox" name="chbox2" />Чек-бокс 2
+                </div>
+            </ol>          
+            <div class ="radio-group">
+                <input type="radio" value="r1" checked name="tech" />Радио-1
+                <input type="radio" value="r2" name="tech" />Радио-2
+                <input type="radio" value="r3" name="tech" />Радио-3
+            </div>
+
+            <div class="input-group">Логин: <input class="login" width ="150" type="text" name="userName" placeholder="Введите имя" size="18" /></div>
+            <div class="input-group">Пароль:<input class="pass" type="text" name="userPhone" placeholder="Введите пароль" size="18" maxlength="11" /></div>
+
+            <p> 
+                <button type="submit">Отправить</button>
+            </p>
+        </form>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="navbar navbar-dark navbar-expand-md bg-dark">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link"
+                       href="http://www.facebook.com">
+                        <i class="fa fa-facebook fa-2x"></i>
+                    </a>
+                    <a class="nav-item nav-link" href="http://www.vk.com">
+                        <i class="fa fa-vk fa-2x"></i>
+                    </a>
+                    <a class="nav-item nav-link" href="http://www.twitter.com">
+                        <i class="fa fa-twitter fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

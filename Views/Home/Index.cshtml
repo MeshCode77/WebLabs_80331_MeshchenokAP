@@ -1,0 +1,41 @@
+﻿
+@{
+    //ViewData["Title"] = "Index";
+    ViewBag.Title = "Главная страница";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*<h2>Hello World!</h2>*@
+    <h2>@ViewData["Text"]</h2>
+
+<main class="container">
+    <p class="spisok">Список</p>
+    <ul class="spisokAB">
+        <li>А. элемент 1 списка</li>
+        <li>B. элемент 2 списка</li>
+    </ul>
+    <hr> <!--// Рисует горизонтальную линию-->
+    <p class="forma">Форма</p>
+    <form method="post" action="http://localhost:8080">
+        <select asp-items="@ViewData["Lst"] as SelectList"></select>
+        <ol type="A">
+            @for (int i = 1; i < 5; i++)
+            {
+                <li>элемент @i списка</li>
+            }
+        </ol>
+        <div class="radio-group">
+            <input class= "radio-left" type ="radio" value="r1" checked name="tech" />Радио-1
+            <input class= "radio-left" type="radio" value="r2" name="tech" />Радио-2
+            <input class= "radio-left" type="radio" value="r3" name="tech" />Радио-3
+        </div>
+
+        <div class="input-group">Логин: <input class="login" width="150" type="text" name="userName" placeholder="Введите имя" size="18" /></div>
+        <div class="input-group">Пароль:<input class="pass" type="text" name="userPhone" placeholder="Введите пароль" size="18" maxlength="11" /></div>
+
+        <p >
+            <button class="button-right" type="submit">Отправить</button>
+        </p>
+    </form>
+
+</main>

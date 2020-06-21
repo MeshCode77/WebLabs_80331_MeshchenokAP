@@ -1,0 +1,75 @@
+﻿header, footer {
+    background-color: #343a40;
+}
+
+.nav-color {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.spisok {
+    text-align: left;                 /*размещение текста*/
+    font-family: Arial, sans-serif;   /*шрифты*/
+    line-height 18px;                /*высота строки*/
+    font-size: 24px;                 /*размер шрифта*/
+    font-weight: bold;               /*жирный шрифт*/
+    font-style: italic;              /*наклонный шрифт*/
+    letter-spacing: 2px;              /*отступ между букв*/
+    /*text-indent: 20px                каждый обзац с красной строки*/
+    /*text-transform:uppercase;         все буквы большие*/
+}
+
+.spisokAB{
+    list-style-type: none;
+}
+
+.forma {
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: bold;              /*жирный шрифт*/
+    color: red;
+}
+
+.width-group{
+    margin-left: 108px;
+}
+
+.radio-group{
+    /*margin-left: 10px;*/
+    margin-bottom: 25px;
+}
+
+.radio-left{
+    margin-left: 30px;
+}
+
+.input-group{
+    margin-bottom: 15px;
+}
+
+
+.login {
+/*    color:  blue;*/
+    padding: 5px;
+    margin-left: 20px;
+    width: 550px;
+    border: 2px solid rgba(116, 111, 111, 0.50);
+    border-radius: 5px;
+    
+}
+
+.login:focus{
+    bolder-color: #2f529a;
+}
+
+.pass {
+    margin-left: 10px;
+    padding: 5px;
+    width: 550px;
+    border: 2px solid rgba(116, 111, 111, 0.50);
+    border-radius: 5px;
+}
+
+.button-right{
+    width: 200px;
+    margin-left: 70px;
+}

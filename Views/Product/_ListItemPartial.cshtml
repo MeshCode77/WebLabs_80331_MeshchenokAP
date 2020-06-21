@@ -1,0 +1,87 @@
+﻿@model WebLabsV05.DAL.Entities.Dish
+
+@*@model Dish*@
+<div class='card m-2 p-1 text-center col-4'>
+    <img src="~/Images/@Model.Image"
+         alt='NoImage'
+         class="card-img-top" />
+    <div class="card-body">
+        <h5 class="card-title">
+            @Model.DishName
+        </h5>
+        <p class="card-text">
+            @Model.Description
+        </p>
+        <div class="card-text badge badge-secondary">
+            <h6>@Model.Calories калорий</h6>
+        </div>
+        @{ // Получение текущего адреса
+            var request = ViewContext.HttpContext.Request;
+            var returnUrl = request.Path +
+            request.QueryString.ToUriComponent();
+        }
+        <!--Разметка кнопки добавления в корзину-->
+        <p class="mt-2">
+            <a asp-action="Add"
+               asp-controller="Cart"
+               asp-route-id="@Model.DishId"
+               asp-route-returnUrl="@returnUrl"
+               class="btn btn-primary">
+                <i class="fa fa-shopping-cart"></i> В корзину
+            </a>
+        </p>
+    </div>
+</div>
+
+
+
+
+
+
+@*<h4>Dish</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="_ListItemPartial">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="DishId" class="control-label"></label>
+                    <input asp-for="DishId" class="form-control" />
+                    <span asp-validation-for="DishId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DishName" class="control-label"></label>
+                    <input asp-for="DishName" class="form-control" />
+                    <span asp-validation-for="DishName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Description" class="control-label"></label>
+                    <input asp-for="Description" class="form-control" />
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Calories" class="control-label"></label>
+                    <input asp-for="Calories" class="form-control" />
+                    <span asp-validation-for="Calories" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Image" class="control-label"></label>
+                    <input asp-for="Image" class="form-control" />
+                    <span asp-validation-for="Image" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DishGroupId" class="control-label"></label>
+                    <input asp-for="DishGroupId" class="form-control" />
+                    <span asp-validation-for="DishGroupId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>*@
+

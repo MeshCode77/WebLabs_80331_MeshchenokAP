@@ -1,0 +1,29 @@
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: E:\БГУиР ИИТ гр.80331\Веб Технологии\myLabs\Lab9\Lab1
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: E:\БГУиР ИИТ гр.80331\Веб Технологии\myLabs\Lab9\Lab1
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: E:\БГУиР ИИТ гр.80331\Веб Технологии\myLabs\Lab9\Lab1
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: E:\БГУиР ИИТ гр.80331\Веб Технологии\myLabs\Lab9\Lab1
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: E:\БГУиР ИИТ гр.80331\Веб Технологии\myLabs\Lab9\Lab1
+info: group=all groups, page =1
+User logged in.
+info: group=all groups, page =1
+info: group=all groups, page =1
+info: group=all groups, page =2
+info: group=all groups, page =1
+info: group=all groups, page =2
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: E:\БГУиР ИИТ гр.80331\Веб Технологии\myLabs\Lab9\Lab1
+info: group=all groups, page =1
+info: group=all groups, page =1
+21.06.2020-20:14:33: url: /Cart/Add/2?returnUrl=%2FCatalog returns 302
+info: group=all groups, page =1

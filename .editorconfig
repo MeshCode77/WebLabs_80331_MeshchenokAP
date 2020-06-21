@@ -1,0 +1,7 @@
+﻿[*.cs]
+
+# IDE0058: Значение выражения никогда не используется
+csharp_style_unused_value_expression_statement_preference = discard_variable:none
+
+# IDE0022: Использовать тело блока для методов
+csharp_style_expression_bodied_methods = false:none
